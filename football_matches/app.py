@@ -4,12 +4,12 @@ import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 # Initialize your bot with the Telegram API token
-bot = telebot.TeleBot("7174133433:AAHsJk4TueerCNc6Nt2X0wq9MkGEo1C4Bak")
+bot = telebot.TeleBot("Telegram API")
 
 # Function to fetch yesterday's and today's matches
 def get_matches(date):
     url = f'https://api.football-data.org/v4/matches?date={date}'
-    headers = {'X-Auth-Token': "28b9e0541c734aee8bb89008d71bea9a"}
+    headers = {'X-Auth-Token': "API"}
     response = requests.get(url, headers=headers)
     data = response.json()
     return data
